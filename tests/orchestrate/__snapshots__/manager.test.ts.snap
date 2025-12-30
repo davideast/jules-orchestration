@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OrchestrationManager > should capture the manifest structure in a snapshot 1`] = `
+{
+  "currentPhase": 1,
+  "mission": "Monorepo Restructure",
+  "phases": [
+    {
+      "id": 1,
+      "name": "foundation",
+      "strategy": "sequential",
+      "tasks": [
+        {
+          "description": "Initialize workspaces and extract @modjules/core.",
+          "id": "setup-core",
+          "sessionId": null,
+          "status": "pending",
+        },
+      ],
+    },
+    {
+      "id": 2,
+      "name": "adapters",
+      "strategy": "parallel",
+      "tasks": [
+        {
+          "description": "Extract @modjules/node.",
+          "id": "node-adapter",
+          "sessionId": null,
+          "status": "pending",
+        },
+        {
+          "description": "Extract @modjules/browser.",
+          "id": "browser-adapter",
+          "sessionId": null,
+          "status": "pending",
+        },
+        {
+          "description": "Extract @modjules/gateway.",
+          "id": "gateway-adapter",
+          "sessionId": null,
+          "status": "pending",
+        },
+      ],
+    },
+  ],
+  "version": "1.0.0",
+}
+`;
